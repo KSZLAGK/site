@@ -1,0 +1,40 @@
+<head>
+<title>Ask Unity</title>
+</head>
+<body style="background-color:black;color:white;font-family:consolas">
+<center>
+<br>
+<h1>
+Why is my script doesn't working?
+</h1>
+<br>
+<h3 id="randomAnwser">
+</h3>
+</center>
+</body>
+<script>
+var random = Math.floor(Math.random() * 6) + 1;
+var textToDisplay = "...";
+switch (random)
+{
+case 1:
+textToDisplay = "you forgot about ';' symbol.";
+break;
+case 2:
+textToDisplay = "no.";
+break;
+case 3:
+textToDisplay = "you misspelled a variable name.";
+break;
+case 4:
+textToDisplay = "you doing something in a wrong way.";
+break;
+case 5:
+textToDisplay = "yes.";
+break;
+default:
+textToDisplay = "i dont know.";
+break;
+}
+document.getElementById("randomAnwser").innerHTML = "Probably because " + textToDisplay;
+</script>
