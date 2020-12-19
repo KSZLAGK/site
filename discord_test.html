@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Discord Trickery</title>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-blue.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='milligram.min.css') }}">
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" />
+
+    <script>var isIE = /*@cc_on!@*/false || !!document.documentMode; (isIE ? window.location.replace("https://www.ezcomputersolutions.com/blog/stop-using-internet-explorer/") : console.log("No IE detected :)"))</script>
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+            <div class="mdl-layout__header-row portfolio-logo-row">
+                <span class="mdl-layout__title">
+                    <span style="font-family: IBM Plex Serif;" class="mdl-layout__title" id="welcome_text"></span>
+                    <script>document.getElementById('welcome_text').innerHTML = `Welcome to ${document.location}`</script>
+                </span>
+            </div>
+        </header>
+
+        <main class="mdl-layout__content">
+            <div class="mdl-grid portfolio-max-width portfolio-contact">
+                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                    <div class="mdl-card__supporting-text" style="box-sizing: border-box;display:block">
+                        <p>We redirect your Discord memes to a Rick Roll. That is the only purpose of all this
+                            garbage. Enjoy.
+                        </p>
+                        <form>
+                            <fieldset>
+
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="discordurl"
+                                        placeholder="https://cdn.discordapp.com/.....">
+                                    <label class="mdl-textfield__label" for="discordurl">Discord CDN
+                                        URL</label>
+                                </div>
+
+                                <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+                                    <label class="mdl-selectfield__label" for="urlselect">URL To Use</label>
+                                    <select class="mdl-selectfield__select" id="urlselect">
+                                        <option value="dlcordapp.com">dlcordapp.com</option>
+                                        <option value="dircordapp.com">dircordapp.com</option>
+                                        <option value="www.dlcordapp.com">www.dlcordapp.com</option>
+                                        <option value="www.dircordapp.com">www.dircordapp.com</option>
+                                        <option value="cdn.dlcordapp.com">cdn.dlcordapp.com</option>
+                                        <option value="cdn.dircordapp.com">cdn.dircordapp.com</option>
+                                    </select>
+                                </div>
+
+                                <hr>
+
+                                <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="alts">
+                                    <span class="mdl-switch__label">Enable Alternative Links</span>
+                                    <input type="checkbox" id="alts" name="alts" value="Enable Alts"
+                                        class="mdl-switch__input">
+                                </label>
+                                <br><br>
+                                <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+                                    <label class="mdl-selectfield__label" for="memeselect">Meme</label>
+                                    <select class="mdl-selectfield__select" id="memeselect" disabled>
+                                        <option value="0">Never Gonna Give You Up</option>
+                                        <option value="1">Thunder Cross Split Attack</option>
+                                        <option value="2">Steamed Hams</option>
+                                        <option value="3">Curb Your Enthusiasm</option>
+                                        <option value="4">The Spanish Inquisition</option>
+                                        <option value="5">Jebaited</option>
+                                        <option value="6">Get Stickbugged</option>
+                                    </select>
+                                </div>
+
+                            </fieldset>
+                            <strong><hr></strong>
+
+                            <code id="linkout">cdn.discordapp.com/example</code>
+                        </form>
+                    </div>
+                </div>
+                <!--<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                    <div class="mdl-card__supporting-text" style="box-sizing: border-box;display:block">
+                        <p>
+                            Welcome to dlcordapp, this app uses a very similar link to the cdn.discordapp.com domain used by Discord to embed content like images and gifs into the Discord application. 
+                        </p>
+                        <p>
+                            Nerdy Explanation: Discord and other chat applications that support embedding use a form of proxy server to access content links like www.example.com/image.jpg and render the content within the chat thread, to prevent IP leaks. This proxy is usually detectable by something called a UserAgent string specifying the type of client and version. What this application does is it monitors for requests made by the Discord app useragent and returns a redirect to the cdn.discordapp.com content specified by the link to this app. However if the app doesnt detect that discord is requesting content it redirects the user to one of many different available meme links such as the all too infamous Rick Roll.
+                        </p>
+                        <p>
+                            Why: Primarily, this is a way to rick roll our friends because by now people have memorized the youtube link (if it ends with XcQ the links stays blue) and the many ways it can be presented, however people are much more trusting of a discord content link which displays their favorite meme. This can be made ever more effective if the Discord embedding system crashes causing no images to be embedded, which happens somewhat often.
+                        </p>
+                        <p>
+                            Additionally, this is a little example of phishing training in the wild. Discord warns for external links yet most users click past them without a second thought. This shows that is not always safe. 
+                        </p>
+                        <p>
+                            Phishing just like any other attempt to spread malware on the internet is not simply confined to cheesy emails. It can come in many flavors including some which have spread through discord such as incidents like hacked accounts spreading links which hack even more accounts or the QR code login debacle.
+                        </p>
+                        <p>
+                            In the case of this application we are sending users to youtube for a funny time but we are using the same tactics and although we have some domains attached to this application these are only a few that we decided to purchase out of the hundreds we were able to come up with within a matter of minutes. The moral of the story here is not to trust every link that is sent to you even by people you think you trust. Bad websites are everywhere and consider yourself lucky this is not one of them. If you or a friend have fallen for this, hopefully you will now be taking a much closer look at discord embed links before clicking them. Please continue to share and spread this application if not just for the memes but also for keeping the discord community at large a safer place. Or don't, this thing is actually pretty expensive to host... 
+                        </p>
+                        <p>
+                            Disclaimer: This website is not in any way affiliated with Discord Inc, Hammer and Chisel, or any other companies. This website does not take responsibility for any misuse of the service. The purpose of this website is parody.
+                    </div>
+                </div>-->
+            </div>
+            <footer style="position: fixed; bottom:0; width:100%;" class="mdl-mini-footer">
+                <div class="mdl-mini-footer--left-section">
+                    <button onclick="gotogit()" class="mdl-mini-footer--social-btn social-btn social-btn__blogger">
+                        <span class="visuallyhidden">Github</span>
+                    </button>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+
+<script src="{{ url_for('static', filename='material.min.js') }}"></script>
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+
+</html>
