@@ -26,6 +26,11 @@ export function main()
     h1.innerHTML = h1.innerHTML.replace(/:rickroll:/g, "<img src=\"https://cdn.discordapp.com/emojis/760500367238365214.gif?v=1\">");
       h1.title = ":rickroll:";
     }
+    if(h1.innerHTML.indexOf(":hepaslimin:") !== -1) 
+    {
+    h1.innerHTML = h1.innerHTML.replace(/:rickroll:/g, "<img src=\"https://cdn.discordapp.com/emojis/659752436906590209.png?v=1\">");
+      h1.title = ":hepaslimin:";
+    }
     
   }
     // Form moving with you
