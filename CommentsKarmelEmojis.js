@@ -5,9 +5,9 @@ export function onChatLoad()
   var watermark = document.getElementsByTagName("div");
   for (var i = 0; i < watermark.length; i++)
   {
-  if (watermark.getAttribute("style") == "text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;")
+  if (watermark[i].getAttribute("style") == "text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;")
     {
-      watermark.setAttribute("style", "display: none;");
+      watermark[i].setAttribute("style", "display: none;");
     }
   }
   
@@ -61,9 +61,9 @@ export function onPageLoad()
   var watermark = document.getElementsByTagName("div");
   for (var i = 0; i < watermark.length; i++)
   {
-  if (watermark.getAttribute("style") == "text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;")
+  if (watermark[i].getAttribute("style") == "text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;")
     {
-      watermark.setAttribute("style", "display: none;");
+      watermark[i].setAttribute("style", "display: none;");
     }
   }
   
