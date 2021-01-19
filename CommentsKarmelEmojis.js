@@ -16,10 +16,12 @@ export function main()
       
     }
     
+    // -- Emoji list --
     if(h1.innerHTML.indexOf(":rickroll:") !== -1) 
     {
     h1.innerHTML = h1.innerHTML.replace(/:rickroll:/g, "<img src=\"https://cdn.discordapp.com/emojis/760500367238365214.gif?v=1\">");
     }
+    
     
     // Form moving with you
   var inputForm = document.getElementById("inputForm");
