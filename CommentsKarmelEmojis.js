@@ -58,15 +58,6 @@ export function mainChat()
 export function onPageLoad()
 {
   
-  var iframeBorder = document.getElementsByTagName("iframe");
-  for (var i=0; i < iframeBorder.length; i++)
-  {
-    if (iframeBorder[i].getAttribute("style") == "overflow:auto;height: 80%; width:100%;")
-    {
-    iframeBorder[i].setAttribute("style", "overflow:auto;height: 80%; width:100%; border:none;");
-    }
-  }
-  
   var watermark = document.getElementsByTagName("div");
   for (var i = 0; i < watermark.length; i++)
   {
