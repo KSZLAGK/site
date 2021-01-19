@@ -57,6 +57,9 @@ export function mainChat()
 
 export function onPageLoad()
 {
+  var inputForm2 = document.getElementsByTagName("form")[0];
+  inputForm2.innerHTML = "<hr size=\"2\" width=\"100%\" color=\"#40444b\">Napisz na kanale:<br><br><input type=\"text\" name=\"content\" style=\"font-size:30px;color: #FFFFFF;border: none;background-color: #40444b;border-radius: 8px;width:80%;height:52px;\"><input type=\"submit\" name=\"Submit\" style=\"font-size:30px;color: #dcddde;border: none;background-color: #7289DA;border-radius: 8px;height:52;\">";
+  
   
   var watermark = document.getElementsByTagName("div");
   for (var i = 0; i < watermark.length; i++)
