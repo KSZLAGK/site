@@ -57,9 +57,6 @@ export function mainChat()
 
 export function onPageLoad()
 {
-  var inputForm2 = document.getElementsByTagName("form")[0];
-  inputForm2.innerHTML = "<hr size=\"2\" width=\"100%\" color=\"#40444b\">Napisz na kanale:<br><br><input type=\"text\" name=\"content\" style=\"font-size:30px;color: #FFFFFF;border: none;background-color: #40444b;border-radius: 8px;width:80%;height:52px;\">&nbsp;<input type=\"submit\" name=\"Submit\" style=\"font-size:30px;color: #dcddde;border: none;background-color: #7289DA;border-radius: 8px;height:52;\">";
-  
   
   var watermark = document.getElementsByTagName("div");
   for (var i = 0; i < watermark.length; i++)
@@ -78,6 +75,9 @@ export function onPageLoad()
     // document.getElementById('bottomOfMessages2').scrollIntoView();
 
   document.getElementsByTagName("body")[0].setAttribute("style", "font-family: Verdana; color: #dcddde;background-color: #36393f;font-size: 0.7em;");
+  var inputForm2 = document.getElementsByTagName("form")[0];
+  inputForm2.innerHTML = "<hr size=\"2\" width=\"100%\" color=\"#40444b\">Napisz na kanale:<br><br><input type=\"text\" name=\"content\" style=\"font-size:30px;color: #FFFFFF;border: none;background-color: #40444b;border-radius: 8px;width:80%;height:52px;\">&nbsp;<input type=\"submit\" name=\"Submit\" style=\"font-size:30px;color: #dcddde;border: none;background-color: #7289DA;border-radius: 8px;height:52;\">";
+  
   
 }
 
