@@ -1,7 +1,6 @@
 export function onChatLoad()
 {
   document.getElementsByTagName("body")[0].setAttribute("style", "font-family: Verdana; color: #dcddde;background-color: #36393f;font-size: 0.7em;");
-  document.getElementById("messageToDown").scrollIntoView();
 // Load emote list
   var h1s = document.getElementsByTagName("h1");
   for (var i = 0; i < h1s.length; i++) 
@@ -38,6 +37,7 @@ export function onChatLoad()
       h1.title = ":mmLol:";
     }
   }
+   document.getElementById("messageToDown").scrollIntoView();
 }
 
 export function mainChat()
