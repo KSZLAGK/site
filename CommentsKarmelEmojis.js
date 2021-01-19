@@ -38,5 +38,5 @@ export function main()
     document.getElementsByTagName('body')[0].innerHTML+= "<hr id=\"bottomOfMessages2\"size=\"2\" width=\"100%\" color=\"#dcddde\">";
   }
     
-  }
+  
 }
