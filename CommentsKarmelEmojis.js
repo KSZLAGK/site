@@ -25,7 +25,6 @@ export function main()
   var inputForm = document.getElementById("inputForm");
   if (inputForm.getAttribute("style") !== "background-color:#36393f;font-size:30px;position:fixed;left:0.1%;right: 0.1%;top:0.01%")
   {
-    document.getElementById('bottomOfMessages').scrollIntoView();
   inputForm.setAttribute("style", "background-color:#36393f;font-size:30px;position:fixed;left:0.1%;right: 0.1%;top:0.01%");
   document.getElementById('bottomOfMessages').scrollIntoView();
   }
