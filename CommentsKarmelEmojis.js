@@ -1,7 +1,7 @@
 
 export function main() 
 {
-  
+  document.getElementById('bottomOfMessages2').scrollIntoView();
   
   var h1s = document.getElementsByTagName("h1");
   for (var i = 0; i < h1s.length; i++) 
@@ -29,10 +29,6 @@ export function main()
   {
   inputForm.setAttribute("style", "background-color:#36393f;font-size:30px;position:fixed;left:0.1%;right: 0.1%;top:0.01%");
     document.getElementsByTagName('body')[0].innerHTML+= "<hr id=\"bottomOfMessages2\"size=\"2\" width=\"100%\" color=\"#dcddde\">";
-    for (var i = 0; i < 5; i++)
-         {
-  document.getElementById('bottomOfMessages2').scrollIntoView();
-    }
   }
     
   }
