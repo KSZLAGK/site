@@ -46,7 +46,10 @@ export function onChatLoad()
       h1.title = ":mmLol:";
     }
   }
+  if (document.getElementById("scrollToMe") !== null)
+  {
   document.getElementById("scrollToMe").scrollIntoView();
+  }
    
 }
 
