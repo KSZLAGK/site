@@ -7,9 +7,10 @@ export function main()
     var h1 = h1s[i];
     if (h1.innerHTML.indexOf("18-01-21 22:40:14:") !== -1)
     {
-      h1.innerHTML = h1.innerHTML.replace(/18-01-21 22:40:14:/g, "Karmel's Bot: <i>Message deleted by Karmel's Bot<br>Reason: Autoplay video with rickroll was sent!<i>");
       var obj = h1.getElementsByTagName("iframe")[0];
-      h1.element.removeChild(obj);
+      obj.innerHTML = "";
+      h1.innerHTML = h1.innerHTML.replace(/18-01-21 22:40:14:/g, "Karmel's Bot: <i>Message deleted by Karmel's Bot<br>Reason: Autoplay video with rickroll was sent!<i>");
+      
     }
     
     if(h1.innerHTML.indexOf(":rickroll:") !== -1) {
