@@ -16,9 +16,9 @@ export function main()
     }
     
     // -- Emoji list --
-    if (h1.innerHTML.indexOf("[emotes]") !== -1)
+    if (h1.innerHTML.indexOf("!emotes") !== -1)
     {
-    h1.innerHTML = h1.innerHTML.replace(/[emotes]/g, "<a style=\"color: #00b0f4;\" href=\"h\">Lista_dostępnych_emotek<\/a>");
+    h1.innerHTML = h1.innerHTML.replace(/!emotes/g, "<a style=\"color: #00b0f4;\" href=\"h\">Lista_dostępnych_emotek<\/a>");
     }
     if(h1.innerHTML.indexOf(":rickroll:") !== -1) 
     {
