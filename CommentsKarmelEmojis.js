@@ -36,9 +36,8 @@ export function onChatLoad()
     h1.innerHTML = h1.innerHTML.replace(/:mmLol:/g, "<img src=\"https://cdn.discordapp.com/emojis/585549338051215495.png?v=1\">");
       h1.title = ":mmLol:";
     }
-    
-    document.getElementById("messageToDown").scrollIntoView();
   }
+  document.getElementById("scrollToMe").scrollIntoView();
    
 }
 
