@@ -31,6 +31,11 @@ export function main()
     h1.innerHTML = h1.innerHTML.replace(/:hepaslimin:/g, "<img src=\"https://cdn.discordapp.com/emojis/659752436906590209.png?v=1\">");
       h1.title = ":hepaslimin:";
     }
+    if(h1.innerHTML.indexOf(":mmLol:") !== -1) 
+    {
+    h1.innerHTML = h1.innerHTML.replace(/:mmLol:/g, "<img src=\"https://cdn.discordapp.com/emojis/585549338051215495.png?v=1\">");
+      h1.title = ":mmLol:";
+    }
     
   }
     // Form moving with you
