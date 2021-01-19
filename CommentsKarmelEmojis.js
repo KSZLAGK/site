@@ -68,20 +68,11 @@ export function onPageLoad()
   }
   
   // Form moving with you
-  var inputForm = document.getElementById("inputForm");
-   inputForm.innerHTML = inputForm.innerHTML.replace(/Dodaj komentarz:/g, "Napisz na kanale:");
-  inputForm.setAttribute("style", "background-color:#36393f;font-size:30px;position:fixed;left:0.1%;right: 0.1%;top:0.01%");
+  // var inputForm = document.getElementById("inputForm");
+  // inputForm.innerHTML = inputForm.innerHTML.replace(/Dodaj komentarz:/g, "Napisz na kanale:");
+ // inputForm.setAttribute("style", "background-color:#36393f;font-size:30px;position:fixed;left:0.1%;right: 0.1%;top:0.01%");
     // -- scroll up --  document.getElementsByTagName('body')[0].innerHTML+= "<hr id=\"bottomOfMessages2\"size=\"2\" width=\"100%\" color=\"#dcddde\">";
     // document.getElementById('bottomOfMessages2').scrollIntoView();
-
-  document.getElementsByTagName("body")[0].setAttribute("style", "font-family: Verdana; color: #dcddde;background-color: #36393f;font-size: 0.7em;");
-  var inputForm2 = document.getElementsByTagName("form")[0];
-    inputForm2.getElementsByTagName("hr")[0].setAttribute("color", "#40444b");
-    inputForm2.getElementsByTagName("hr")[0].setAttribute("size", "2");
-    inputForm2.innerHTML = inputForm.innerHTML.replace(/Dodaj komentarz: /g, "Napisz na kanale:<br><br>");
-    inputForm2.getElementsByTagName("input")[0].setAttribute("style", "font-size:30px;color: #FFFFFF;border: none;background-color: #40444b;border-radius: 8px;width:80%;height:52px;");
-    inputForm2.getElementsByTagName("input")[1].setAttribute("style", "font-size:30px;color: #dcddde;border: none;background-color: #7289DA;border-radius: 8px;height:52;");
-
   
 }
 
