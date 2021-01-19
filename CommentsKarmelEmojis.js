@@ -2,7 +2,7 @@
 export function main() 
 {
   // Form moving with you
-  var inputForm = document.getElementById("inputForm")[0];
+  var inputForm = document.getElementById("inputForm");
   inputForm.setAttribute("style", "font-size:30pxposition:fixed;top:20px;");
   
   var h1s = document.getElementsByTagName("h1");
