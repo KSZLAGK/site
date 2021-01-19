@@ -23,10 +23,10 @@ export function main()
     
     // Form moving with you
   var inputForm = document.getElementById("inputForm");
-  if (inputForm.getAttribute("style") !== "background-color:#36393f;font-size:30px;position:fixed;top:20px;")
+  if (inputForm.getAttribute("style") !== "background-color:#36393f;font-size:30px;position:fixed;left:0.1%;right: 0.1%;top:0.01%")
   {
     document.getElementById('bottomOfMessages').scrollIntoView();
-  inputForm.setAttribute("style", "background-color:#36393f;font-size:30px;position:fixed;top:20px;");
+  inputForm.setAttribute("style", "background-color:#36393f;font-size:30px;position:fixed;left:0.1%;right: 0.1%;top:0.01%");
   document.getElementById('bottomOfMessages').scrollIntoView();
   }
     
