@@ -6,7 +6,7 @@ export function main()
   if (inputForm.getAttribute("style") !== "font-size:30pxposition:fixed;top:20px;"))
   {
   inputForm.setAttribute("style", "font-size:30pxposition:fixed;top:20px;");
-  document.getElementById('id').scrollIntoView();
+  document.getElementById('bottomOfMessages').scrollIntoView();
   }
   
   var h1s = document.getElementsByTagName("h1");
