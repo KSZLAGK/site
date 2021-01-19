@@ -2,6 +2,15 @@ export function onChatLoad()
 {
   document.getElementsByTagName("body")[0].setAttribute("style", "font-family: Verdana; color: #dcddde;background-color: #36393f;font-size: 0.7em;");
 // Load emote list
+  var watermark = document.getElementsByTagName("div");
+  for (var i = 0; i < watermark.length; i++)
+  {
+  if (watermark.getAttribute("style") == "text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;")
+    {
+      watermark.setAttribute("style", "display: none;");
+    }
+  }
+  
   var h1s = document.getElementsByTagName("h1");
   for (var i = 0; i < h1s.length; i++) 
   {
@@ -48,6 +57,16 @@ export function mainChat()
 
 export function onPageLoad()
 {
+  
+  var watermark = document.getElementsByTagName("div");
+  for (var i = 0; i < watermark.length; i++)
+  {
+  if (watermark.getAttribute("style") == "text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;")
+    {
+      watermark.setAttribute("style", "display: none;");
+    }
+  }
+  
   // Form moving with you
   var inputForm = document.getElementById("inputForm");
    inputForm.innerHTML = inputForm.innerHTML.replace(/Dodaj komentarz:/g, "Napisz na kanale:");
