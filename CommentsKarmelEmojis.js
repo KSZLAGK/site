@@ -3,7 +3,7 @@ export function main()
 {
   // Form moving with you
   var inputForm = document.getElementById("inputForm");
-  if (inputForm.getAttribute("style") != "font-size:30pxposition:fixed;top:20px;"))
+  if (inputForm.getAttribute("style") !== "font-size:30pxposition:fixed;top:20px;"))
   {
   inputForm.setAttribute("style", "font-size:30pxposition:fixed;top:20px;");
   document.getElementById('id').scrollIntoView();
