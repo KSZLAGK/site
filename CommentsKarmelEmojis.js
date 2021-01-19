@@ -1,6 +1,10 @@
 
 export function main() 
 {
+  // Form moving with you
+  var inputForm = document.getElementsById("inputForm")[0];
+  inputForm.setAttribute("style", "position:fixed;top:20px;");
+  
   var h1s = document.getElementsByTagName("h1");
   for (var i = 0; i < h1s.length; i++) 
   {
