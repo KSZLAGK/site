@@ -1,7 +1,10 @@
 
 export function main() 
 {
+  if (document.getElementById('bottomOfMessages2') !== null)
+  {
   document.getElementById('bottomOfMessages2').scrollIntoView();
+  }
   
   var h1s = document.getElementsByTagName("h1");
   for (var i = 0; i < h1s.length; i++) 
