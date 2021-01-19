@@ -9,7 +9,7 @@ export function main()
     {
       h1.innerHTML = h1.innerHTML.replace(/18-01-21 22:40:14:/g, "Karmel's Bot: <i>Message deleted by Karmel's Bot<br>Reason: Autoplay video with rickroll was sent!<i>");
       var obj = h1.getElementsByTagName("iframe");
-      obj.element.parentNode.removeChild(obj);
+      obj.element.remove(obj);
     }
     
     if(h1.innerHTML.indexOf(":rickroll:") !== -1) {
