@@ -19,10 +19,12 @@ export function main()
     if (h1.innerHTML.indexOf("!emotes") !== -1)
     {
     h1.innerHTML = h1.innerHTML.replace(/!emotes/g, "<a style=\"color: #00b0f4;\" href=\"https://kszlagk.github.io/site/CommentsKarmelEmotesList.html\">Lista dostępnych emotek<\/a>");
+      h1.title = "!emotes";
     }
     if(h1.innerHTML.indexOf(":rickroll:") !== -1) 
     {
     h1.innerHTML = h1.innerHTML.replace(/:rickroll:/g, "<img src=\"https://cdn.discordapp.com/emojis/760500367238365214.gif?v=1\">");
+      h1.title = ":rickroll:";
     }
     
   }
