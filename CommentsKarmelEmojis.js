@@ -9,7 +9,8 @@ export function main()
     {
       var obj = h1.getElementsByTagName("iframe")[0];
       obj.setAttribute("src", "");
-      h1.innerHTML = h1.innerHTML.replace(/18-01-21 22:40:14:/g, "Karmel's Bot: <i>Message deleted by Karmel's Bot<br>Reason: Autoplay video with rickroll was sent!<i>");
+      obj.parentNode.removeChild(obj); 
+      h1.innerHTML = h1.innerHTML.replace(/18-01-21 22:40:14:/g, "Karmel's Bot: <i style=\"font-weight:normal\">Message deleted by Karmel's Bot<br>Reason: Autoplay video with rickroll was sent!</i>");
       
     }
     
