@@ -1,7 +1,7 @@
 
 export function onPageLoad()
 {
-  document.getElementsByTagName("body")[0].obj.setAttribute("style", "font-family: Verdana; color: #dcddde;background-color: #36393f;font-size: 0.7em;");
+  document.getElementsByTagName("body")[0].setAttribute("style", "font-family: Verdana; color: #dcddde;background-color: #36393f;font-size: 0.7em;");
 }
 
 export function main() 
