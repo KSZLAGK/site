@@ -25,6 +25,7 @@ export function main()
   var inputForm = document.getElementById("inputForm");
   if (inputForm.getAttribute("style") !== "font-size:30pxposition:fixed;top:20px;")
   {
+    document.getElementById('bottomOfMessages').scrollIntoView();
   inputForm.setAttribute("style", "font-size:30pxposition:fixed;top:20px;");
   document.getElementById('bottomOfMessages').scrollIntoView();
   }
