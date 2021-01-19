@@ -1,4 +1,9 @@
 
+export function onPageLoad()
+{
+
+}
+
 export function main() 
 {
   
