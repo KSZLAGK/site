@@ -15,14 +15,6 @@ export function onChatLoad()
   for (var i = 0; i < h1s.length; i++) 
   {
     var h1 = h1s[i];
-    if (h1.innerHTML.indexOf("18-01-21 22:40:14:") !== -1)
-    {
-      var obj = h1.getElementsByTagName("iframe")[0];
-      obj.setAttribute("src", "");
-      obj.parentNode.removeChild(obj); 
-      h1.innerHTML = h1.innerHTML.replace(/18-01-21 22:40:14:/g, "Karmel's Bot: <i style=\"font-weight:normal\">Message deleted by Karmel's Bot<br>Reason: Autoplay video with rickroll was sent!</i>");
-      
-    }
     
     // -- Emoji list --
     if (h1.innerHTML.indexOf("!emotes") !== -1)
@@ -71,7 +63,7 @@ export function onPageLoad()
   {
     if (iframeBorder[i].getAttribute("style") == "overflow:auto;height: 80%; width:100%;")
     {
-    iframeBorder[i].setAttribute("style", "overflow:auto;height: 80%; width:100%; frameBorder:0; border-style: none;");
+    iframeBorder[i].setAttribute("style", "overflow:auto;height: 80%; width:100%; border:none;");
     }
   }
   
