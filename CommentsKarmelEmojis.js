@@ -44,8 +44,8 @@ export function main()
   {
    inputForm.innerHTML = inputForm.innerHTML.replace(/Dodaj komentarz:/g, "Napisz na kanale:");
   inputForm.setAttribute("style", "background-color:#36393f;font-size:30px;position:fixed;left:0.1%;right: 0.1%;top:0.01%");
-    document.getElementsByTagName('body')[0].innerHTML+= "<hr id=\"bottomOfMessages2\"size=\"2\" width=\"100%\" color=\"#dcddde\">";
-      document.getElementById('bottomOfMessages2').scrollIntoView();
+    // -- scroll up --  document.getElementsByTagName('body')[0].innerHTML+= "<hr id=\"bottomOfMessages2\"size=\"2\" width=\"100%\" color=\"#dcddde\">";
+    // document.getElementById('bottomOfMessages2').scrollIntoView();
   }
     
   
