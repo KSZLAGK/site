@@ -1,12 +1,18 @@
 
 export function onPageLoad()
 {
-  document.getElementsByTagName("body")[0].setAttribute("style", "font-family: Verdana; color: #dcddde;background-color: #36393f;font-size: 0.7em;");
-}
-
-export function main() 
-{
+  // Form moving with you
+  var inputForm = document.getElementById("inputForm");
+   inputForm.innerHTML = inputForm.innerHTML.replace(/Dodaj komentarz:/g, "Napisz na kanale:");
+  inputForm.setAttribute("style", "background-color:#36393f;font-size:30px;position:fixed;left:0.1%;right: 0.1%;top:0.01%");
+    // -- scroll up --  document.getElementsByTagName('body')[0].innerHTML+= "<hr id=\"bottomOfMessages2\"size=\"2\" width=\"100%\" color=\"#dcddde\">";
+    // document.getElementById('bottomOfMessages2').scrollIntoView();
+  }
   
+  
+  document.getElementsByTagName("body")[0].setAttribute("style", "font-family: Verdana; color: #dcddde;background-color: #36393f;font-size: 0.7em;");
+  
+  // Load emote list
   var h1s = document.getElementsByTagName("h1");
   for (var i = 0; i < h1s.length; i++) 
   {
@@ -43,15 +49,9 @@ export function main()
     }
     
   }
-    // Form moving with you
-  var inputForm = document.getElementById("inputForm");
-  if (inputForm.getAttribute("style") !== "background-color:#36393f;font-size:30px;position:fixed;left:0.1%;right: 0.1%;top:0.01%")
-  {
-   inputForm.innerHTML = inputForm.innerHTML.replace(/Dodaj komentarz:/g, "Napisz na kanale:");
-  inputForm.setAttribute("style", "background-color:#36393f;font-size:30px;position:fixed;left:0.1%;right: 0.1%;top:0.01%");
-    // -- scroll up --  document.getElementsByTagName('body')[0].innerHTML+= "<hr id=\"bottomOfMessages2\"size=\"2\" width=\"100%\" color=\"#dcddde\">";
-    // document.getElementById('bottomOfMessages2').scrollIntoView();
-  }
-    
+}
+
+export function main() 
+{
   
 }
