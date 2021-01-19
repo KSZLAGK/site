@@ -66,6 +66,12 @@ export function mainChat()
 export function onPageLoad()
 {
   
+  var iframeBorder = document.getElementsByTagName("iframe");
+  for (var i=0; i < iframeBorder.length; i++)
+  {
+    iframeBorder[i].setAttribute("style", "frameBorder=\"0\"");
+  }
+  
   var watermark = document.getElementsByTagName("div");
   for (var i = 0; i < watermark.length; i++)
   {
