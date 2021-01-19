@@ -28,7 +28,7 @@ export function main()
     }
     if(h1.innerHTML.indexOf(":hepaslimin:") !== -1) 
     {
-    h1.innerHTML = h1.innerHTML.replace(/:rickroll:/g, "<img src=\"https://cdn.discordapp.com/emojis/659752436906590209.png?v=1\">");
+    h1.innerHTML = h1.innerHTML.replace(/:hepaslimin:/g, "<img src=\"https://cdn.discordapp.com/emojis/659752436906590209.png?v=1\">");
       h1.title = ":hepaslimin:";
     }
     
