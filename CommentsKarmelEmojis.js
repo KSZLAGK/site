@@ -3,7 +3,11 @@ export function main()
 {
   // Form moving with you
   var inputForm = document.getElementById("inputForm");
+  if (inputForm.getAttribute("style") != "font-size:30pxposition:fixed;top:20px;"))
+  {
   inputForm.setAttribute("style", "font-size:30pxposition:fixed;top:20px;");
+  document.getElementById('id').scrollIntoView();
+  }
   
   var h1s = document.getElementsByTagName("h1");
   for (var i = 0; i < h1s.length; i++) 
@@ -18,8 +22,9 @@ export function main()
       
     }
     
-    if(h1.innerHTML.indexOf(":rickroll:") !== -1) {
+    if(h1.innerHTML.indexOf(":rickroll:") !== -1) 
+    {
     h1.innerHTML = h1.innerHTML.replace(/:rickroll:/g, "<img src=\"https://cdn.discordapp.com/emojis/760500367238365214.gif?v=1\">");
+    }
   }
-}
 }
