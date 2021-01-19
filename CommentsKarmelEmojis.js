@@ -69,7 +69,10 @@ export function onPageLoad()
   var iframeBorder = document.getElementsByTagName("iframe");
   for (var i=0; i < iframeBorder.length; i++)
   {
-    iframeBorder[i].setAttribute("style", "frameBorder=\"0\"");
+    if (iframeBorder[i].getAttribute("style") == "overflow:auto;height: 80%; width:100%;")
+    {
+    iframeBorder[i].setAttribute("style", "overflow:auto;height: 80%; width:100%; frameBorder:0; border-style: none;");
+    }
   }
   
   var watermark = document.getElementsByTagName("div");
